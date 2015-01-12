@@ -75,6 +75,8 @@ def pull_sample_tweets(hashtag):
     print "Retrieved tweets for {0}".format(hashtag)
     texts = []
     for status in tweets['statuses']:
-        texts.append(status['text'])
+        # ignore retweets
+        if status['text'][:2] is not u'RT':
+            texts.append(status['text'])
 
     return texts
