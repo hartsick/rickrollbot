@@ -70,7 +70,7 @@ def generate_text_from_hashtag(url_length, hashtag):
 
 def pull_sample_tweets(hashtag):
     '''Given a hashtag, returns a list of sample texts from relevant tweets'''
-    tweets = Twy_REST().search(q=hashtag)
+    tweets = Twy_REST().search(q=hashtag, result_type='popular')
 
     print "Retrieved tweets for {0}".format(hashtag)
     texts = []

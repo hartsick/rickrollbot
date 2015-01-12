@@ -102,7 +102,7 @@ class Twy_REST(object):
 
         return reset
 
-    def search(self, q=None, result_type=None, lang='en', count=99):
+    def search(self, q=None, result_type=None, lang='en', count=50):
         '''Simple wrapper for Twython search'''
         results = self.twitter.search(q=q, result_type=result_type, lang=lang, count=count)
 
