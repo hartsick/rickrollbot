@@ -38,6 +38,8 @@ def run_bot():
                 sleep_time = Twy_REST().get_seconds_until_reset()
                 print "Rate limit hit. Resting for {0} seconds".format(sleep_time)
                 time.sleep(sleep_time)
+            else:
+                time.sleep(60)
 
             logging.exception(e)
         else:
