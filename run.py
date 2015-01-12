@@ -43,7 +43,7 @@ def run_bot():
 
             logging.exception(e)
         else:
-            # tweet again in three hours
+            # tweet again in ten min
             time.sleep(600)
 
 # def change_name():
