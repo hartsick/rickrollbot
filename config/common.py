@@ -6,3 +6,5 @@ twitter_cred = [
     os.environ.get('RICKROLL_ACCESS_TOKEN'),
     os.environ.get('RICKROLL_ACCESS_TOKEN_SECRET')
 ]
+
+env_is_dev = True if os.environ.has_key('USER') else False
